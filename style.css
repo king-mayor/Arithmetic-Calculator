@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--main-background);
+}
+:root{
+    /*BACKGROUNDS*/
+    --main-background: hsl(222, 26%, 31%);
+    --keypad-background: hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+    --orange: hsl(25, 98%, 40%);
+    --dark-moderate-cyan: hsl(185, 42%, 37%);
+    --red-background: hsl(6, 63%, 50%);
+    /*TEXTS COLORS*/
+    --white-text: hsl(0, 0%, 100%);
+    --very-dark-blue:  hsl(198, 20%, 13%);
+    --light-yellow: hsl(52, 100%, 62%);
+}
+.calc-container {
+    background-color: var(--keypad-background);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+.wrapper {
+    background-color: var(--main-background);
+    padding: 10px;
+}
+.container {
+    display: grid;
+    place-items: center;
+    /*margin: 50px auto;*/
+    padding: 20px 0px;
+}
+.calc-container button {
+    padding: 10px;
+    font-size: 0.8em;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white-text);
+    color: var(--very-dark-blue);
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+.contA, .contB, .contC, .contD {
+    display: flex;
+}
+.contE {
+    display: flex;
+}
+.contE button {
+    width: 100px;
+}
+.input-section input{
+    background-color: var(--screen-background);
+    color: var(--white-text);
+    width: 250px;
+    outline: none;
+    border: none;
+    padding: 15px 0px 15px 10px;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.cont4 button, .cont17 button{
+    background-color: var(--dark-moderate-cyan);
+    color: var(--white-text);
+}
+.cont18 button {
+    background-color: var(--red-background);
+    color: var(--white-text);
+}
+
